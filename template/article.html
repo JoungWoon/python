@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>기사 내용</title>
+    <style>
+        /* Naver style CSS */
+        body {
+            font-family: 'Nanum Gothic', sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: #03c75a;
+        }
+
+        p {
+            padding: 10px;
+            background-color: #fff;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        a {
+            color: #03c75a;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>기사 내용</h1>
+    <p>{{ content | safe }}</p>
+    <a href="/">뒤로가기</a>
+</body>
+
+</html>
